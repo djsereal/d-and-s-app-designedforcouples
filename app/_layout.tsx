@@ -83,6 +83,8 @@ export default function RootLayout() {
                       <Stack.Screen name="tips" options={{ title: "Relationship Tips", headerBackButtonDisplayMode: "minimal" }} />
                       <Stack.Screen name="memory-detail/[id]" options={{ title: "Memory", headerBackButtonDisplayMode: "minimal" }} />
                       <Stack.Screen name="tip-detail/[id]" options={{ title: "Tip", headerBackButtonDisplayMode: "minimal" }} />
+                      <Stack.Screen name="add-intimacy" options={{ title: "Write Response", headerBackButtonDisplayMode: "minimal" }} />
+                      <Stack.Screen name="intimacy-detail/[id]" options={{ headerShown: false }} />
                     </Stack>
                   </NavigationGuard>
                   <SystemBars style="auto" />
