@@ -8,7 +8,6 @@ const TABS = [
   { name: 'memories', route: '/(tabs)/memories' as const, icon: 'photo-library' as const, label: 'Memories' },
   { name: 'together', route: '/(tabs)/together' as const, icon: 'favorite'      as const, label: 'Together' },
   { name: 'reflect',  route: '/(tabs)/reflect'  as const, icon: 'menu-book'     as const, label: 'Reflect' },
-  { name: 'intimacy', route: '/(tabs)/intimacy' as const, icon: 'local-fire-department' as const, label: 'Intimacy' },
   { name: 'more',     route: '/(tabs)/more'     as const, icon: 'more-horiz'    as const, label: 'More' },
 ];
 
@@ -20,13 +19,12 @@ export default function TabLayout() {
         <Stack.Screen name="memories" />
         <Stack.Screen name="together" />
         <Stack.Screen name="reflect" />
-        <Stack.Screen name="intimacy" />
         <Stack.Screen name="more" />
         <Stack.Screen name="(home)" />
       </Stack>
       <FloatingTabBar
         tabs={TABS}
-        containerWidth={420}
+        containerWidth={360}
         borderRadius={35}
         bottomMargin={20}
       />
